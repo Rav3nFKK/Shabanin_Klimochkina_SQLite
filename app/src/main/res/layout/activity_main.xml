@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/NameET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Имя"
+        app:layout_constraintTop_toTopOf="parent"></EditText>
+
+
+    <EditText
+        android:id="@+id/MailET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Почта"
+        app:layout_constraintTop_toBottomOf="@+id/NameET"></EditText>
+
+    <Button
+        android:id="@+id/AddBut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10mm"
+        android:layout_marginRight="3mm"
+        android:text="Добавить"
+        app:layout_constraintRight_toLeftOf="@+id/ReadBut"
+        app:layout_constraintTop_toBottomOf="@id/MailET"></Button>
+
+    <Button
+        android:id="@+id/ReadBut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10mm"
+        android:text="Считать"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@id/MailET"
+
+
+        ></Button>
+
+    <Button
+        android:id="@+id/ClearBut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3mm"
+        android:layout_marginTop="10mm"
+        android:text="Очистить"
+        app:layout_constraintLeft_toRightOf="@+id/ReadBut"
+        app:layout_constraintTop_toBottomOf="@id/MailET"></Button>
+
+    <TextView
+        android:id="@+id/Out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ReadBut"></TextView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
